@@ -1,0 +1,68 @@
+detailview : https://codepen.io/towfique-elahe/pen/qBooPxo
+
+
+eventRegister template : https://codepen.io/Aakash-dev/details/NYwPjo
+
+Dekho ye registration form template hai ko use kr k react mai is do rout mai userRegisteration, eventRegisteration component bana k benjna.
+
+http://localhost:3000/registerUser      -> for registering the user
+http://localhost:3000/registerEvent     -> for registering the event.
+
+user registereration mai ye saare fields rahenge
+
+firstName : string,
+lastName : string
+address : {
+    street : String,
+    city : String,
+    state : String,
+    zipCode : String,
+},
+phone : String,
+    length : 10
+    required : true
+},
+email : {
+    type : String,
+    require :true
+},
+password : {
+        type :String,
+        minLength : 8,
+        maxLength :15,
+        require :true
+},
+
+
+ type : {
+        type : String,
+        required : true
+    },    //['workshops', 'online streaming event', 'comedy show', 'sprituality', 'Music show', 'Talks', 'other'] //dropdownbox
+    language : {
+        type : String,
+        required : true
+    }, //['hindi', 'english', 'telu', 'punjabi', 'bengali', 'others'],  //dropdownbox
+    money : {
+        type : Number,
+        required : true
+    }, 
+    city : String,
+    state : String,
+    zipcode : String,
+    title : {
+        type : String,
+        required : true
+    },
+    detail : {
+        type : String,
+        required : true
+    },
+    startTime : {
+        type : Date,
+        required : true
+    },
+    endTime : Date,
+    imgUrl :{
+        required :true,
+        type : String
+    }
